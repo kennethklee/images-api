@@ -1,4 +1,4 @@
-panamax-api
+images-api
 ===========
 
 Simple images api
