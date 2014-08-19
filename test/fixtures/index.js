@@ -1,7 +1,7 @@
 var fixtures = require('node-mongoose-fixtures');
 
-fixtures.save('snapshots', {
-    snapshots: [
+fixtures.save('images', {
+    images: [
         {
             _id: 'test-image-1',
             public_id: 'photo1'

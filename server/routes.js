@@ -10,7 +10,7 @@ module.exports = function(app) {
         .get(images.list)
         .post(bodyParser.raw({type: 'jpeg'}), images.create);
 
-    app.route('/images/:snapshot_id')
+    app.route('/images/:image_id')
         .get(images.show)
         .delete(images.delete);
 

@@ -1,5 +1,4 @@
 var fs = require('fs'),
-    rmrf = require('rmrf'),
     request = require('supertest'),
     agent = require('superagent'),
     http = require('http'),
@@ -56,7 +55,7 @@ describe('Images', function() {
             .type('jpeg');
 
         req.on('response', function(res) {
-            res.body.image.should.equal(res.body._id);
+            res.body.public_id.should.equal(res.body._id);
             done();
         });
 
